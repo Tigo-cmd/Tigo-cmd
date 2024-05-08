@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PFMIwEz4azGH2kdFDxK9G0H4fh2hs98wPxqBEPW+pt16tr2JzIotpnCqV2tFrl44YtzQ+wwDBKEOoBVk0ookGw==",
+  "success": true,
+  "projectFilePath": "/home/tigo/Desktop/projects/portfolio/.net/portfolio.csproj",
+  "expectedPackageFiles": [
+    "/home/tigo/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/tigo/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/tigo/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel Tigo</title>
+    
+    <!-- Font formats -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main css -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- Header Part -->
     <header class="header_section">
         <a href="#" class="logo">EmmanuelTigo</a>
+        
+        <i class="fa-solid fa-bars" id="icon"></i>
 
-        <nav class="active">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <section class="home_section" id="home">
+        <div class="home_content">
+            <h3>Hi, Welcome</h3>
+            <h1>Emmanuel Tigo</h1>
+            <h3>I am a Software Engineer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quaerat, voluptates temporibus aut cupiditate similique beatae odit ea, distinctio, quo molestiae quae assumenda eius rem.</p>
+            <div class="social_handles">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="btn">Download CV</a>
+        </div>
+        <div class="home_image">
+            <img src="media/profile1.jpg" alt="">
+        </div>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
