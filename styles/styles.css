@@ -300,5 +300,9 @@ span{
     font-size: 7rem;
 }
 .service_box h3{
-    
+    font-size: 2.6rem;
+}
+.service_box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
 }
