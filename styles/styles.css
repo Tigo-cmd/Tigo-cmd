@@ -13,11 +13,26 @@
 
 :root{
     --text-color: #fff;
-    --main-bg: #075320e4;
-    --sub-color:#13f25aa9;
+    --main-bg: #ea781be4;
+    --sub-color:#e89146a9;
     --main-color: #1f291b;
+    --gradient: #e8924673;
 }
 
+[theme = "dark"]{
+    --text-color: #fff;
+    --main-bg: #000;
+    --sub-color: #111111cb;
+    --gradient: 1111118c;
+}
+
+[theme = "green"] {
+    --text-color: #fff;
+    --main-bg: #21dd59e4;
+    --sub-color:#7ded8882;
+    --main-color: #1f291b;
+    --gradient: #6dbf7273;
+}
 html {
     overflow-x: hidden;
     font-size: 62.5%;
@@ -46,7 +61,7 @@ section{
 }
 .logo{
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--text-color);
     font-weight: 700;
     cursor: default;
     animation-name: fromRight;
@@ -54,12 +69,12 @@ section{
     animation-timing-function: ease-in;
     /* animation-iteration-count: 3; */
     animation-fill-mode: backwards;
-    text-shadow: 0 5px 20pX #fff;
+    text-shadow: 0 5px 20pX var(--text-color);
 }
 .navbar a{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
+    color: var(--text-color);
     margin-left: 4rem;
     transition: .5s ease;
 }
@@ -101,7 +116,7 @@ span{
     font-size: 4.9rem;
     text-shadow: 0 5px 20px #ffffff5e;
     animation-name: fromRight;
-    animation-duration: 1s;
+    animation-duration: .9s;
     animation-timing-function: ease-in;
     animation-fill-mode: backwards;
 }
@@ -164,7 +179,7 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: #fff;
+    background-color: var(--text-color);
     border-radius: 4rem;
     box-shadow: 0 0 1 var(--main-bg);
     font-size: 1.6rem;
@@ -176,7 +191,7 @@ span{
 }
 #tigo{
     color: var(--main-bg);
-    background-color: #fff;
+    background-color: var(--text-color);
     padding: 5px;
     border-radius: 70px;
     margin-right: 5px;
@@ -189,7 +204,7 @@ span{
 .btn:hover {
     box-shadow: none;
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px #ffff;
+    box-shadow: 0 5px 20px var(--text-color);
 }
 .btn:active{
     transform: translateY(-1px);
@@ -277,7 +292,7 @@ span{
     margin-bottom: 5rem;
 }
 .service_section{
-    background-image: linear-gradient(to bottom, #f4f1f1, rgba(142, 247, 168, 0.493), #f4f1f1);
+    background-image: linear-gradient(to bottom, #f4f1f1, var(--gradient), #f4f1f1);
     background-position: center;
     background-size: cover;
 }
@@ -312,7 +327,7 @@ span{
     margin: 1rem 0 3rem;
 }
 .portfolio_section{
-    background-image: linear-gradient(to bottom, #f4f1f1, rgba(142, 247, 168, 0.493), #f4f1f1ab), url(../media/idea.jpg);
+    background-image: linear-gradient(to bottom, #f4f1f1, var(--gradient), #f4f1f1ab), url(../media/idea.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -377,7 +392,7 @@ span{
 }
 .portfolio_layer i{
     font-size: 2.6rem;
-    background: #fff;
+    background: var(--text-color);
     padding: 1rem;
     border-radius: 50%;
     color: #000;
@@ -423,7 +438,7 @@ span{
     box-shadow: 0 5px 20pX var(--main-bg);
 }
 .contact_section{
-    background: linear-gradient(to bottom, rgba(142, 247, 168, 0.493), #f4f1f1ab)
+    background: linear-gradient(to bottom, var(--gradient), #f4f1f1ab)
 
 }
 .footer_section{
@@ -508,6 +523,8 @@ span{
     .navbar a{
         color: var(--main-bg);
         display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
     .navbar.active{
         display: block;
@@ -558,4 +575,15 @@ span{
     .contact_section form .input_box input {
         width: 100%;
     }
+}
+
+.themes{
+    display: flex;
+    gap: 3rem;
+}
+
+/*=================theme switching================*/
+
+#theme-toggle {
+    cursor: pointer;
 }
